@@ -1,0 +1,63 @@
+.emes-modal-content fieldset {
+    border: 1px solid #ccc;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 7px 8px;
+    margin-top: 30px;
+}
+
+.emes-modal-content fieldset .h {
+    min-height: 40px;
+    max-height: 85px;
+    overflow: auto;
+}
+
+.emes-modal-content fieldset .rights {
+    max-height: 210px;
+}
+
+.emes-modal-content fieldset .columns {
+    max-height: 90%;
+}
+
+.emes-modal-content fieldset.calc-h30x {
+    height: 175px;
+    height: -moz-calc(100% - 360px); /*Firefox*/
+    height: -webkit-calc(100% - 360px); /*chrome safari*/
+    height: calc(100% - 360px); /*Standard */
+}
+
+.emes-modal-content fieldset>legend {
+    border: 0px;
+    padding-left: 5px;
+    margin: 0;
+    margin-left: 15px;
+    width: inherit;
+    font-size: 12px;
+}
+
+.emes-modal-content .nav-stacked>li>a {
+    color: #666;
+}
+
+.emes-modal-content .nav-stacked>li>a:hover,
+.emes-modal-content .nav-stacked>li.active>a,
+.emes-modal-content .nav-stacked>li>a.focus {
+    color: white;
+}
+
+.emes-modal-content .form-inline .input-group label.line {
+    width: 90px;
+}
+
+.emes-modal-content .form-inline .input-group {
+    width: 260px;
+}
+
+.emes-modal-content .em-stacked>li {
+    padding: 5px 0;
+}
+.emes-modal-content textarea{
+    width: 480px;
+    height: 50px;
+}

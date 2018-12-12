@@ -1,0 +1,49 @@
+<div class="emes-page-card">
+    <form class="form-inline emes-submit-form" id="emes-submit-form-product-type">
+        <input type="hidden" name="id" value="{{id}}" />
+        <input type="hidden" name="categoryId" value="{{categoryId}}" />
+        <div class="emes-card-title">
+            <label>$t('emes.productName')</label> 
+            <div class="btn-group">
+                 <a class="btn btn-default emes-app-delete" href="#">
+                   <i class="fa fa-save"></i>
+                    <span>$t('emes.delete')</span>
+                 </a>
+                 <a class="btn btn-default emes-app-add" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.add')</span>
+                 </a>
+                <a class="btn btn-default emes-app-save" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.modify')</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-content form-inline">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line">
+                        <span class="emes-form-required">*</span>$t('emes.industryName')：</label>
+                </div>
+                <input type="text" name="name" class="form-control" validator="isRequire"  value="{{name}}">
+            </div>
+            <div class="input-group" style="margin-bottom: 15px;">
+                <div class="input-group-addon">
+                    <label class="line">$t('emes.whetherUse')：</label>
+                </div>
+                <select name="usable" class="form-control">
+                    {{#isusable usable}} {{/isusable}}
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-arrowdown"></i>
+                </span>
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line">$t('emes.productDescription')：</label>
+                </div>
+                <textarea class="form-control" rows="3" name="desc">{{desc}}</textarea>
+            </div>
+        </div>
+    </form>
+</div>

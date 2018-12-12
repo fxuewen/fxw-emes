@@ -1,0 +1,81 @@
+{
+	"traceId": "6C44CB57-2FC4-4609-AFB7-F15FF2C8949B",
+	"code": "200",
+	"data": {
+		"lastPage": 8,
+		"navigatepageNums": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		],
+		"startRow": 1,
+		"hasNextPage": true,
+		"prePage": 0,
+		"nextPage": 2,
+		"colWidth": [
+			16,
+			16,
+			32
+		],
+		"endRow": 5,
+		"pageSize": 5,
+		"colAlias": [
+			"操作名称",
+			"用户",
+			"操作模块"
+		],
+		"list": [
+			{
+				"module": "/option-arrange.html",
+				"name": "/option-arrange.html",
+				"userId": 2
+			}, {
+				"module": "/",
+				"name": "/",
+				"userId": 2
+			}, {
+				"module": "/message.html",
+				"name": "/message.html",
+				"userId": 2
+			}, {
+				"module": "/",
+				"name": "/",
+				"userId": 2
+			}, {
+				"module": "/option-arrange.html",
+				"name": "/option-arrange.html",
+				"userId": 2
+			}
+		],
+		"colOrder": [
+			"name",
+			"userId",
+			"module"
+		],
+		"pageNum": 1,
+		"colVisible": [
+			"name",
+			"userId",
+			"module"
+		],
+		"navigatePages": 8,
+		"total": 104,
+		"pages": 21,
+		"firstPage": 1,
+		"size": 5,
+		"colType": [
+			"TEXT",
+			"TEXT",
+			"TEXT"
+		],
+		"isLastPage": false,
+		"hasPreviousPage": false,
+		"isFirstPage": true
+	},
+	"success": true
+}

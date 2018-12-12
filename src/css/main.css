@@ -1,0 +1,620 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body .emes-wrapper {
+    overflow-y: hidden;
+}
+
+#sys-main-page-tabs {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.emes-wrapper .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.emes-wrapper .main-sidebar {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.emes-wrapper .main-sidebar .sidebar {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.emes-wrapper .content-wrapper {
+    margin-top: 50px;
+}
+
+/*页头*/
+
+.content-header .emes-header-info {
+    display: inline-block;
+}
+
+.content-header .ztree-close {
+    position: relative;
+    left: 100px;
+    font-size: 14px;
+}
+
+.content-header .emes-page-header-ol {
+    position: relative;
+    display: inline;
+    float: none;
+    left: 2px;
+    top: 0;
+}
+
+/*页面搜索*/
+
+.emes-content-search {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: -20px;
+    border-radius: 4px;
+}
+
+/*页面内容*/
+
+.emes-page-content-tree {
+    background-color: #fff;
+    margin: 0;
+}
+
+.emes-left-div {
+    position: relative;
+    margin: 0;
+    padding-top: 15px;
+    width: 20%;
+    height: 100%;
+    min-height: 600px;
+    border-left: 0;
+    border-top: 0;
+    overflow: hidden;
+    transition: width 400ms;
+}
+
+.emes-right-div {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    min-height: 600px;
+    overflow: auto;
+    transition: width 400ms;
+    padding: 15px;
+    border-left: 1px solid #d2d6de
+}
+
+.emes-page-tree-nav {
+    padding: 15px;
+    overflow: auto;
+}
+
+.emes-ztree-close {
+    cursor: pointer;
+}
+
+.ztree-close.emes-left-div {
+    width: 0;
+}
+
+.emes-left-div .emes-page-tree {
+    max-height: 580px;
+    overflow-y: auto;
+}
+
+.ztree-close+.emes-right-div {
+    width: auto;
+}
+
+.emes-page-card {
+    border-radius: 0;
+    border: 1px solid #eee;
+    background: #fff;
+    height: calc(100% - 34px);
+}
+
+.emes-page-card .input-group {
+    margin: 10px 0;
+}
+
+.emes-card-title {
+    height: 48px;
+    position: relative;
+    line-height: 48px;
+    padding: 0 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px solid #e8e8e8;
+    zoom: 1;
+    font-size: 16px;
+}
+
+.emes-page-card .form-control-feedback {
+    cursor: pointer;
+    pointer-events: auto;
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.emes-page-card select {
+    appearance: none;
+}
+
+/*搜索组*/
+
+.emes-search-form {
+    padding: 0px 5px 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.emes-search-form .form-inline {
+    display: inline-block;
+    width: calc(100% - 200px);
+    max-height: 300px;
+    min-height: 48px;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+
+.emes-search-form .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+    margin: 10px;
+    /* min-width: 20%; */
+}
+
+.form-inline .input-group .input-group-addon {
+    width: 100px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 0;
+    border: 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: right;
+    background-color: transparent;
+}
+
+.emes-search-form .form-inline .input-group .input-sm {
+    padding: 5px 8px;
+}
+
+.emes-search-form .input-group label.line {
+    display: block;
+    height: 14px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    font-weight: normal;
+    text-overflow: ellipsis;
+}
+
+.emes-search-form .search-btn-group {
+    margin-right: 15px;
+}
+
+/*表格上方按钮组*/
+
+.emes-table-btn {
+    height: 48px;
+    position: relative;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emes-table-breadcrumb-type {
+    color: #444;
+}
+
+.emes-table-breadcrumb-label {
+    padding: 0 5px;
+    color: #777;
+}
+
+.emes-table-breadcrumb-label::before {
+    content: '>\A0';
+    color: #ccc;
+}
+
+.emes-page-table {
+    padding: 5px 20px 25px 20px;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.emes-table-pagination {
+    display: -ms-flexbox;
+    display: flex;
+    height: 48px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.emes-pagination-recode span {
+    padding: 0px 5px;
+    color: red;
+}
+
+/*选项卡*/
+
+.emes-nav-tabs {
+    display: inline-block;
+    max-width: calc(100% - 450px);
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin: 0 30px;
+    border: none;
+    position: relative;
+    top: 22px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.emes-nav-tabs .sys-tab {
+    position: relative;
+    line-height: 25px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-right: 2px;
+}
+
+.emes-nav-tabs .sys-tab:last-child {
+    margin-right: 0;
+}
+
+.emes-nav-tabs .sys-tab.active {
+    background-color: #ecf0f5;
+    color: #777;
+}
+
+.emes-nav-tabs .sys-tab:hover {
+    background-color: #ecf0f5;
+    color: #777;
+}
+
+.emes-nav-tabs .sys-tab .emes-tab-close {
+    margin-left: 2px;
+}
+
+/*模态框*/
+.modal-content {
+    border-radius: 6px;
+}
+
+.emes-modal-body {
+    background-color: #f5f7fa;
+    border-radius: 0 0 6px 6px;
+}
+
+.emes-horizontal-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emes-modal-content-form {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal-header .emes-modal-title {
+    display: inline;
+    line-height: 10px;
+}
+
+.emes-modal-title>.emes-button-group {
+    position: relative;
+    top: 3px;
+    right: 16px;
+    float: right;
+    font-size: 12px;
+}
+
+.modal-header .close {
+    font-size: 14px;
+    margin-top: 2px;
+    color: rgba(0, 0, 0, 0.43);
+    opacity: 1;
+}
+
+.modal-header .screen {
+    margin-right: 8px;
+}
+
+.emes-card {
+    border-radius: 0;
+    border: 1px solid #eee;
+    margin: 17px;
+    background: #fff;
+}
+
+.emes-modal-content .form-inline .input-group {
+    width: 260px;
+}
+
+.emes-card .emes-auto-input {
+    margin: 10px;
+}
+
+.emes-modal-content .form-control-feedback {
+    cursor: pointer;
+    pointer-events: auto;
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.emes-modal-content select {
+    appearance: none;
+}
+
+.emes-form-control {
+    height: 28px;
+    line-height: 13px;
+    padding: 6px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px !important;
+    z-index: 0 !important;
+    background-color: #fff;
+    box-shadow: none;
+    transition: box-shadow .3s, border-color .3s;
+    width: 100%;
+}
+
+.emes-form-required {
+    color: red;
+}
+
+.form-group i {
+    position: absolute;
+    bottom: 10px;
+    right: 24px;
+    top: auto;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+
+/* 上传模态框 */
+
+#emes-file-uploader-list {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.emes-file-uploader-btn-group {
+    padding: 15px;
+}
+
+#emes-file-uploader-picker {
+    display: inline-block;
+}
+
+#emes-file-uploader-upload {
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    background: #00b7ee;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* 右侧导航栏 */
+
+.emes-control-sidebar {
+    position: fixed;
+}
+
+/* 输入框校验tips弹出框样式 */
+.emes-tooltips {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin-top: 3px;
+    top: 28px;
+    right: 50px;
+    display: block;
+    filter: alpha(opacity=90);
+    opacity: .9;
+    transition: opacity .15s linear;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+}
+
+.emes-tooltips .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+.emes-tooltips .tooltip-inner-text {
+    padding: 5px 8px;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* 展开折叠显示样式 */
+.emes-open-fold {
+    display: inline-block;
+    color: #108ee9;
+    vertical-align: sub;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.emes-open-fold span {
+    font-size: 12px;
+}
+
+.emes-open-fold .fa {
+    transform: rotate(0);
+    transition: transform .3s;
+}
+
+.emes-open-fold .emes-open {
+    transform: rotate(180deg);
+}
+
+.emes-search-form .form-inline.emes-fold-height-animate {
+    max-height: 50px;
+    transition: max-height .4s;
+}
+
+.modal-header {
+    cursor: move;
+}
+
+/*清除浮动*/
+.emes-clearfloat{
+    clear:both;
+    zoom:1;
+}
+.emes-clearfloat:after{
+    height:0px;
+    clear:both;
+    content:".";
+    display:block;
+    visibility:hidden;
+}
+
+/* 确认弹出框和alert框样式 */
+.emes-dialog-contianer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: -webkit-box;
+    z-index: 1110;
+}
+.emes-dialog-contianer .dialog-window {
+    width: 30%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    z-index: 14;
+    margin-left: -15%;
+    background: #fff;
+    border-radius: 5px;
+}
+.emes-dialog-contianer .dialog-window .dialog-header {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.emes-dialog-contianer .dialog-window .dialog-header .dialog-title {
+    float: left;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 48px;
+    margin-left: 12px;
+}
+
+.emes-dialog-contianer .dialog-window .dialog-header .dialog-close {
+    display: inline-block;
+    float: right;
+    margin-right: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.emes-dialog-contianer .dialog-window .dialog-container {
+    width: 100%;
+    padding: 20px 15px 0 15px;
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: normal;
+    text-align: left;
+    line-height: 24px;
+}
+.emes-dialog-contianer .dialog-window .dialog-footer {
+    padding-top: 20px;
+    display: flex;
+}
+.emes-dialog-contianer .dialog-window .dialog-footer button {
+    background-color: #605ca8;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    color: #eee;
+    flex : 1;
+    font-size: 16px;
+    text-shadow: #666 1px 1px 0;
+}
+
+.emes-dialog-contianer .dialog-window .dialog-footer button:nth-child(2) {
+    border-left: 1px solid #ccc;
+}
+
+/* Ztree右键菜单*/
+.emes-page-content-tree #rightMenu {
+    width: 100px;
+    position: absolute;
+    visibility: hidden;
+    text-align: left;
+    padding: 4px;
+}
+
+.emes-page-content-tree #rightMenu a {
+    padding: 3px 8px;
+    background-color:#ecf0f5;
+    vertical-align: middle;
+}
+
+.emes-page-content-tree #rightMenu a:hover {
+    background-color:#FFE6B0;
+}
+
+.emes-page-content-tree #rightMenu a span.fa {
+    margin-right: 5px;
+}
+

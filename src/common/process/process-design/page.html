@@ -1,0 +1,109 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>工艺</a>
+            </li>
+            <li class="active">工艺设计</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <div class="box">
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">产品名称：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="productName" />
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">查询</button>
+                    <button type="button" class="btn btn-default search-reset">重置</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box emes-page-content-tree">
+                    <div class="navbar-nav emes-left-div">
+                        <div>
+                            <ul class="ztree emes-page-tree"></ul>
+                        </div>
+                    </div>
+                    <div class="emes-right-div">
+                        <!--按钮-->
+                        <div class="emes-table-btn">
+                            <div class="emes-table-breadcrumb-product">
+                                <span class="emes-table-breadcrumb-type">产品</span>
+                                <span class="emes-table-breadcrumb-label">工艺</span>
+                            </div>
+                            <div class="btn-group emes-btn-order-group">
+                                <button type="button" class="btn btn-default btn-group-add">
+                                    <span class="fa fa-plus" aria-hidden="true"></span>
+                                    <span>$t('emes.add')</span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-group-modify">
+                                    <span class="fa fa-edit" aria-hidden="true"></span>
+                                    <span>$t('emes.modify')</span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-group-delete">
+                                    <span class="fa fa-remove" aria-hidden="true"></span>
+                                    <span>$t('emes.delete')</span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-group-add-knowledge">
+                                    <span class="fa fa-plus" aria-hidden="true"></span>
+                                    <span>加入知识库</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="emes-page-table">
+                            <table id="emes-page-table-process-design"></table>
+                            <div class="emes-table-pagination"></div>
+                        </div>
+
+                        <!--按钮-->
+                        <div class="emes-page-process-design-procedure hidden">
+                            <div class="emes-table-btn">
+                                <div>
+                                    <span class="emes-table-breadcrumb-type">工艺</span>
+                                    <span class="emes-table-breadcrumb-label">工序</span>
+                                </div>
+                                <div class="btn-group emes-btn-order-group">
+                                    <button type="button" class="btn btn-default btn-group-add-procedure">
+                                        <span class="fa fa-plus" aria-hidden="true"></span>
+                                        <span>$t('emes.add')</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-group-modify-procedure">
+                                        <span class="fa fa-edit" aria-hidden="true"></span>
+                                        <span>$t('emes.modify')</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-group-delete-procedure">
+                                        <span class="fa fa-remove" aria-hidden="true"></span>
+                                        <span>$t('emes.delete')</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-group-up">
+                                        <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                                        <span>上移</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-group-down">
+                                        <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                                        <span>下移</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="emes-page-table">
+                                <table id="emes-page-table-process-design-list"></table>
+                                <div class="emes-table-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,16 @@
+#Baseinfo_ProductTypeInfo .card-content {
+	text-align: center;
+}
+
+#Baseinfo_ProductTypeInfo .input-group {
+	width: 80%;
+}
+
+#Baseinfo_ProductTypeInfo .form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#Baseinfo_ProductTypeInfo .input-group-addon {
+	width: 100px;
+}

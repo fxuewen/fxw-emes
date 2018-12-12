@@ -1,0 +1,28 @@
+<tbody>
+    {{#each data}}
+    <tr style="display: table-row;">
+        <input type="hidden" value="{{id}}" class="emes-app-id" name="id" />
+        <th title="{{fieldName}}">{{fieldName}}
+        </th>
+        <th title="{{nameI18n}}">{{nameI18n}}</th>
+        <th>
+            <input class="form-control input-sm emes-app-aliasName" type="text" name="aliasName" value="{{aliasName}}" />
+        </th>
+        <th>
+            <input class="form-control input-sm emes-app-width" type="text" value="{{width}}" name="width" />
+        </th>
+        <th>
+            <input class="form-control input-sm emes-app-order" type="text" value="{{order}}" name="order" />
+        </th>
+        <th>
+            <label>
+                {{#checkbox visible}} {{/checkbox}}
+                <label></label>
+            </label>
+        </th>
+        <th>
+            {{#queryType showType}} {{/queryType}}
+        </th>
+    </tr>
+    {{/each}}
+</tbody>

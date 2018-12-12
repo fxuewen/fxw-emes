@@ -1,0 +1,107 @@
+<div class="emes-page-card">
+    <form class="form-inline emes-submit-form" id="emes-submit-form-department">
+        <input type="hidden" name="id" value="{{id}}" />
+        <input type="hidden" name="parentId" value="{{parentId}}" />
+        <div class="emes-card-title">
+            <label>$t('emes.departmentInformation')</label>
+            <div class="btn-group">
+                <a class="btn btn-default emes-app-delete" href="#">
+                <i class="fa fa-save"></i>
+                    <span>$t('emes.delete')</span>
+                </a>
+                <a class="btn btn-default emes-app-add" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.add')</span>
+                </a>
+                <a class="btn btn-default emes-app-save" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.modify')</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.departmentName'):</label>
+                </div>
+                <input type="text" class="form-control" name="name" validator="isRequire" value="{{name}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.departmentAbbreviation'):</label>
+                </div>
+                <input type="text" class="form-control" name="shortname" validator="isRequire" value="{{shortname}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.departmentEnglish'):</label>
+                </div>
+                <input type="text" class="form-control" name="nameEn" validator="isRequire" value="{{nameEn}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.departmentEnglishAbbreviation'):</label>
+                </div>
+                <input type="text" class="form-control" name="shortnameEn" validator="isRequire" value="{{shortnameEn}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.departmentCode'):</label>
+                </div>
+                <input type="text" class="form-control" name="code" validator="isRequire" value="{{code}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.businessCategory'):</label>
+                </div>
+                <input type="text" class="form-control" name="category" validator="isRequire" value="{{category}}">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <span class="emes-form-required">*</span>$t('emes.head'):</label>
+                </div>
+                <select class="form-control emes-app-director" name="directorId" style="width: 910px">
+                    <option disabled selected style="display:none" value="">$t('emes.selectHead')</option>
+                </select>
+                <span class="form-control-feedback">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.costCenter'):</label>
+                </div>
+                <select class="form-control emes-app-costdepart" name="costDepart" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectCostCenter')</option>
+                </select>
+                <span class="form-control-feedback">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.senderCenter'):</label>
+                </div>
+                <select class="form-control emes-app-send-depart" name="sendDepart" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectSenderCenter')</option>
+                </select>
+                <span class="form-control-feedback">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.remark'):</label>
+                </div>
+                <textarea class="form-control" rows="3" style="width: 910px;" name="remark">{{remark}}</textarea>
+            </div>
+        </div>
+    </form>
+</div>

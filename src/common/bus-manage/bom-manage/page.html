@@ -1,0 +1,77 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>业务管理</a>
+            </li>
+            <li class="active">产品管理</li>
+        </ol>>
+    </section>
+    <!--搜索框-->
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">物料名称:</label>
+                        </div>
+                        <!-- <input class="form-control input-sm" name="productName"> -->
+                        <input type="text" class="form-control input-sm" name="productName" type="text" />
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">物料类型:</label>
+                        </div>
+                        <!-- <input class="form-control input-sm" name="type"> -->
+                        <select class="selectpicker form-control" name="type" > </select>
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                    <a class="emes-open-fold">
+                        <i class="fa fa-angle-up fa-lg"></i>
+                        <span>$t('emes.hide')</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--内容-->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box emes-page-content-tree">
+                    <div class="navbar-nav emes-left-div">
+                        <div>
+                            <ul class="ztree emes-page-tree"></ul>
+                        </div>
+                    </div>
+                    <div class="emes-right-div">
+                        <!--按钮-->
+                        <div class="emes-table-btn">
+                            <div class="btn-group emes-btn-order-group">
+                                <button type="button" class="emes-btn-group-import">
+                                    <span class="fa fa-upload" aria-hidden="true"></span>
+                                    <span>批量导入</span>
+                                </button>
+                                <button type="button" class="emes-btn-group-export">
+                                    <span class="fa fa-download" aria-hidden="true"></span>
+                                    <span>导出Excel</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="emes-page-table">
+                            <table id="emes-page-table-bom-manage"></table>
+                            <div class="emes-table-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

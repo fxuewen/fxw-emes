@@ -1,0 +1,77 @@
+<div class="emes-modal-content">
+    <form class="emes-modal-clientform">
+        <input type="hidden" name="id" value="{{id}}">
+        <div class="emes-modal-card">
+            <div class="card-title">
+                <label>$t('emes.basicInformation')</label>
+                <div class="btn-group"></div>
+            </div>
+            <div class="card-content form-inline">
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.clientName')：</label>
+                    </div>
+                    <input class="form-control" name="name" type="text" validator="isRequire" value="{{name}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.clientCode')：</label>
+                    </div>
+                    <input class="form-control" name="code" type="text" validator="isRequire" value="{{code}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.companyFullName')：</label>
+                    </div>
+                    <input class="form-control" name="fullName" type="text" validator="isRequire" value="{{fullName}}" />
+                </div>
+            </div>
+        </div>
+        <div class="emes-modal-card">
+            <div class="card-title">
+                <label>$t('emes.detailInformation')</label>
+                <div class="btn-group"></div>
+            </div>
+            <div class="card-content form-inline">
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.subordinateArea')：</label>
+                    </div>
+                    <input class="form-control" name="area" type="text" validator="isRequire" value="{{area}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.subordinateIndustry')：</label>
+                    </div>
+                    <input class="form-control" name="industry" type="text" validator="isRequire" value="{{industry}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contact')：</label>
+                    </div>
+                    <input class="form-control" name="contacts" type="text" validator="isRequire" value="{{contacts}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contactPhoneNumber')：</label>
+                    </div>
+                    <input class="form-control" name="phone" type="text"  validator="isInteger" value="{{phone}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contactAddress')：</label>
+                    </div>
+                    <input class="form-control" name="address" type="text"  validator="isRequire" value="{{address}}" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

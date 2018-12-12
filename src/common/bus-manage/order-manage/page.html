@@ -1,0 +1,120 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>业务管理</a>
+            </li>
+            <li class="active">订单管理</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.productName')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="productName">
+                        <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="product" name="productId">
+                        </select> -->
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.clientName')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="clientName">
+                        <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="client" name="clientId">
+                        </select> -->
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.orderCode')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="mainCode">
+                        <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="order" name="id">
+                        </select> -->
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default search-reset" target="searchReset">$t('emes.reset')</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 订单查询 -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group emes-btn-order-group">
+                            <button id="btn_add" type="button" class="btn btn-default emes-btn-group-add">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                                <span>$t('emes.add')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-modify">
+                                <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                                <span>$t('emes.modify')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-delete">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>$t('emes.delete')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-import">
+                                <span class="fa fa-upload" aria-hidden="true"></span>
+                                <span>$t('emes.import')</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--订单表单-->
+                    <div class="emes-page-table emes-page-order-table">
+                        <table id="emes-page-table-order-manage"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group emes-btn-apart-group">
+                            <button type="button" class="btn btn-default emes-btn-group-show">
+                                <span class="fa fa-toggle-down" aria-hidden="true"></span>
+                                <span>$t('emes.show')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-search">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                                <span>$t('emes.queryDelivery')</span>
+                            </button>
+                            <button id="btn_add" type="button" class="btn btn-default emes-btn-group-add">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                                <span>$t('emes.addDelivery')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-modify">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>$t('emes.modifyDelivery')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-delete">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>$t('emes.deleteDelivery')</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--交期拆分表单-->
+                    <div class="emes-page-table emes-page-apart-table" style="display: none;">
+                        <table id="emes-page-table-order-apart"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,63 @@
+<div class="emes-modal-content">
+    <form class="form-horizontal emes-modal-content-form">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.productName')
+            </label>
+            <div class="col-sm-8">
+                <input class="form-control emes-form-control" validator="isRequire"  select-name="productId">
+                <!-- <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="orderProduct" name="productId">
+                </select> -->
+                <input type="hidden" name="productName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.clientName')
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" readonly="readonly" name="clientName">
+                <input type="hidden" name="clientId">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.code')
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.code')" validator="isRequire" name="code">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.quantity')
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.quantity')" validator="isInteger" name="quantity">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.deliveryQuantity')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.deliveryQuantity')" readonly="readonly" name="deliveryQuantity">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.deliveryDate')
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="$t('emes.deliveryDate')" validator="isRequire" target="date" name="deliveryDate" readonly="readonly">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.followerName')</label>
+            <div class="col-sm-8">
+                <input class="form-control emes-form-control" select-name="followerId">
+                <!-- <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="orderEmployee" name="followerId">
+                </select> -->
+                <input type="hidden" name="followerName">
+            </div>
+        </div>
+    </form>
+</div>

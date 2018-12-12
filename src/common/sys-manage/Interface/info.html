@@ -1,0 +1,143 @@
+<div class="card calc-h3x">
+    <form class="form-inline em-submit-form">
+        <input type="hidden" name="id" value="{{id}}" />
+        <input type="hidden" name="parentId" value="{{parentId}}" />
+        <div class="card-title">
+            <label>$t('emes.departmentInformation')</label>
+            <div class="btn-group">
+                <a class="btn btn-default emes-app-save" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.save')</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.departmentName'):</label>
+                </div>
+                <input type="text" class="form-control" name="name" value="{{name}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.departmentAbbreviation'):</label>
+                </div>
+                <input type="text" class="form-control" name="shortname" value="{{shortname}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.departmentEnglish'):</label>
+                </div>
+                <input type="text" class="form-control" name="nameEn" value="{{nameEn}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.departmentEnglishAbbreviation'):</label>
+                </div>
+                <input type="text" class="form-control" name="shortnameEn" value="{{shortnameEn}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.departmentCode'):</label>
+                </div>
+                <input type="text" class="form-control" name="code" value="{{code}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.businessCategory'):</label>
+                </div>
+                <input type="text" class="form-control" name="category" value="{{category}}">
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>$t('emes.head'):</label>
+                </div>
+                <select class="form-control emes-app-director" name="directorId" style="width: 910px">
+                    <option disabled selected style="display:none" value="">$t('emes.selectHead')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.costCenter'):</label>
+                </div>
+                <select class="form-control emes-app-costdepart" name="costDepart" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectCostCenter')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.senderCenter'):</label>
+                </div>
+                <select class="form-control emes-app-send-depart" name="sendDepart" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectSenderCenter')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.normalCostElement'):</label>
+                </div>
+                <select class="form-control emes-app-normalcost" name="normalCost" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectNormalCostElement')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.customerCostFactors'):</label>
+                </div>
+                <select class="form-control emes-app-clientcost" name="clientCost" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectCustomerCostFactors')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.internalResonRepairCostFactor'):</label>
+                </div>
+                <select class="form-control emes-app-innercost" name="innerCost" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectInternalResonRepairCostFactor')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.supplierReasonCostFactor'):</label>
+                </div>
+                <select class="form-control emes-app-suppliercost" name="supplierCost" style="width: 910px">
+                    <option disabled selected style="display:none">$t('emes.selectSupplierReasonCostFactor')</option>
+                </select>
+                <span class="form-control-feedback" style="padding-top: 8px;">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+            </div>
+            <div class="input-group em-auto-input">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">$t('emes.remark'):</label>
+                </div>
+                <textarea class="form-control" rows="3" style="width: 910px;" name="remark">{{remark}}</textarea>
+            </div>
+        </div>
+    </form>
+</div>

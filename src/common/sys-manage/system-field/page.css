@@ -1,0 +1,54 @@
+.emes-app-report {
+	position: static;
+    float: none;
+    display: block;
+    width: 100%;
+    border: 0 !important;
+    box-shadow: none;
+}
+.em-sys-field-table{
+    table-layout: fixed;
+}
+.em-sys-field-table tr th {
+    width: 12%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.em-sys-field-table tr th:nth-child(1) {
+    width: 16%;
+}
+
+.em-sys-field-table tr th:nth-child(2) {
+    width: 16%;
+}
+
+.em-sys-field-table tr th:nth-child(3),
+.em-sys-field-table tr th:nth-child(4) {
+    width: 15%;
+}
+
+.em-sys-field-table tr th:nth-child(5) {
+    width: 16%;
+}
+
+.em-sys-field-table tr th:nth-child(6) {
+    width: 10%;
+}
+
+.em-sys-field-table tr th input.input-sm{
+    width: 85px;
+}
+
+.table.em-sys-field-table tr th,
+.table.em-sys-field-table tr td {
+    padding: 8px 0;
+}
+
+.table.em-sys-field-table tr>input.emes-app-id {
+    width: 0;
+}
+
+

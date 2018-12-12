@@ -1,0 +1,27 @@
+<div class="card calc-h3x" id="baseinfo_department_deptData">
+    <form class="form-inline em-submit-form">
+        <div class="emes-card-title">
+            <label>$t('emes.interfaceInfomation')</label>
+            <div class="btn-group">
+                <a class="btn btn-default emes-app-save" id="executing" href="#">
+                    <i class="fa fa-save"></i>
+                    <span>$t('emes.perform')</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-content">
+            <input type="hidden" name="name" id="interfaceName" value=""> {{#each this}}
+            <div class="input-group em-auto-input" style="position: relative;left: -202px;">
+                <div class="input-group-addon">
+                    <label class="line" style="width: 140px;">
+                        <a>*</a>{{key}}</label>
+                </div>
+                <textarea rows="3" cols="20" class="form-control" name="{{key}}" style="width: 127%;height: 100%;position: relative;
+	bottom: 10px;" readonly> {{value}}</textarea>
+            </div>
+            {{/each}}
+            <div id="contents" style="overflow: scroll;margin-top: 5%;">
+            </div>
+        </div>
+    </form>
+</div>

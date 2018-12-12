@@ -1,0 +1,104 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>系统配置</a>
+            </li>
+            <li class="active">系统权限配置</li>
+        </ol>
+        <a class="ztree-close emes-ztree-close">
+            <i class="fa fa-outdent"></i>
+            <span>$t('emes.hide')</span>
+        </a>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12 emes-page-content-tree">
+                <div class="box emes-page-box-tree">
+                    <div class="navbar-nav emes-left-div">
+                        <div class="emes-page-tree-nav">
+                            <ul class="dropdown-menu emes-app-role">
+                                <li>
+                                    <a class="create-role modal-add">
+                                        <i class="fa fa-plus"></i>
+                                        <span>$t('emes.createNewRole')</span>
+                                    </a>
+                                </li>
+                                <!--用户对应的角色-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="emes-right-div">
+                        <!--权限配置详细信息-->
+                        <div class="emes-page-card">
+                            <div class="optAll">
+                                <!-- 修改角色名称 -->
+                                <div class="emes-page-privilege-content" style="text-align:right;">
+                                    <a class="btn btn-default update-role" href="#">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        <span>$t('emes.modifyRoleName')</span>
+                                    </a>
+                                </div>
+                                <!--拥有角色的用户-->
+                                <div class="emes-page-privilege-content">
+                                    <div class="board_style fa-hover">
+                                        <div class="board_main">
+                                            <label class="left_float">$t('emes.theUserWithTheRole')</label>
+                                            <div class="right_float">
+                                            </div>
+                                            <div style="clear:both;"></div>
+                                        </div>
+                                        <div class="equipment_name user-content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--角色具有的菜单权限-->
+                                <div class="emes-page-privilege-content">
+                                    <div class="board_style fa-hover">
+                                        <div class="board_main">
+                                            <label class="left_float">$t('emes.menu')</label>
+                                            <div class="right_float">
+                                            </div>
+                                            <div style="clear:both;"></div>
+                                        </div>
+
+                                        <div class="equipment_name permission-menu">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--角色具有的操作权限-->
+                                <div class="emes-page-privilege-content">
+                                    <div class="board_style fa-hover">
+                                        <div class="board_main">
+                                            <label class="left_float">$t('emes.functionalOperation')</label>
+                                            <div class="right_float">
+                                            </div>
+                                            <div style="clear:both;"></div>
+                                        </div>
+                                        <div class="equipment_name oper-content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--角色具有的字段权限-->
+                                <div class="emes-page-privilege-content">
+                                    <div class="board_style fa-hover">
+                                        <div class="board_main">
+                                            <label class="left_float">$t('emes.reportFields')</label>
+                                            <div class="right_float">
+                                            </div>
+                                            <div style="clear:both;"></div>
+                                        </div>
+
+                                        <div class="equipment_name column-content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

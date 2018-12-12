@@ -1,0 +1,174 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>计划管理</a>
+            </li>
+            <li class="active">工单管理</li>
+        </ol>
+    </section>
+
+    <!-- 查询条件 -->
+    <section class="emes-content-search">
+        <div class="box">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#workOrderGenerate">工单生成</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#workOrderConfig">工单配置</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="workOrderGenerate">
+                    <!--搜索框-->
+                    <form class="emes-search-form">
+                        <div class="form-inline">
+                            <!--查询条件-->
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.productName')：</label>
+                                </div>
+                                <input class="form-control input-sm" name="productName">
+                                <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="product" name="productName">
+                                </select> -->
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.clientName')：</label>
+                                </div>
+                                <input class="form-control input-sm" name="clientName">
+                                <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="client" name="clientName">
+                                </select> -->
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.code')：</label>
+                                </div>
+                                <input class="form-control input-sm" name="mainCode">
+                                <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="order" name="mainCode">
+                                </select> -->
+                            </div>
+                        </div>
+                        <div class="search-btn-group">
+                            <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                            <button type="button" class="btn btn-default search-reset" target="searchReset">$t('emes.reset')</button>
+                        </div>
+                    </form>
+
+                    <!--订单表单-->
+                    <div class="emes-page-table emes-page-order-table">
+                        <table id="emes-page-table-order"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group emes-btn-workorder-group">
+                            <button type="button" class="btn btn-default emes-btn-group-show">
+                                <span class="fa fa-toggle-down" aria-hidden="true"></span>
+                                <span>$t('emes.show')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-search">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                                <span>$t('emes.search')</span>
+                            </button>
+                            <button id="btn_add" type="button" class="btn btn-default emes-btn-group-add">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                                <span>$t('emes.add')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-delete">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>$t('emes.delete')</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--工单生成中的工单表单-->
+                    <div class="emes-page-table emes-page-workorder-table" style="display: none;">
+                        <table id="emes-page-table-workorder"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="workOrderConfig">
+                    <!--搜索框-->
+                    <form class="emes-search-form">
+                        <div class="form-inline">
+                            <!--查询条件-->
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.productName')：</label>
+                                </div>
+                                <input class="form-control input-sm" name="productName">
+                                <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="productName"
+                                    name="productName">
+                                </select> -->
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.workordercode')：</label>
+                                </div>
+                                <input class="form-control input-sm" name="code">
+                                <!-- <select class="selectpicker form-control" data-live-search="true" data-live-search-placeholder="$t('emes.search')..." item="workordercode"
+                                    name="code">
+                                </select> -->
+                            </div>
+                        </div>
+                        <div class="search-btn-group">
+                            <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                            <button type="button" class="btn btn-default search-reset" target="searchReset">$t('emes.reset')</button>
+                        </div>
+                    </form>
+
+                    <!--工单表单-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group emes-btn-workorder-config-group">
+                            <button id="btn_add" type="button" class="btn btn-default emes-btn-group-modify">
+                                <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                                <span>$t('emes.modify')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-commit">
+                                <span class="fa fa-check-square-o" aria-hidden="true"></span>
+                                <span>$t('emes.commit')</span>
+                            </button>
+                            <button id="btn_add" type="button" class="btn btn-default emes-btn-group-cancle">
+                                <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+                                <span>$t('emes.cancleProduct')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-start">
+                                <span class="fa fa-caret-square-o-right" aria-hidden="true"></span>
+                                <span>$t('emes.start')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-suspend">
+                                <span class="fa fa-dot-circle-o" aria-hidden="true"></span>
+                                <span>$t('emes.suspend')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-stag">
+                                <span class="fa fa-square-o" aria-hidden="true"></span>
+                                <span>$t('emes.stag')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-continue">
+                                <span class="fa fa-caret-square-o-right" aria-hidden="true"></span>
+                                <span>$t('emes.continue')</span>
+                            </button>
+                            <button type="button" class="btn btn-default emes-btn-group-finish">
+                                <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                <span>$t('emes.finish')</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--订单表单-->
+                    <div class="emes-page-table emes-page-table-config-workorder">
+                        <table id="emes-page-table-workorder-config"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

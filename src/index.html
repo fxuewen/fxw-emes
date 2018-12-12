@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EIMC-MES</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+</head>
+
+<body class="hold-transition skin-purple-light sidebar-mini theme1" ng-app="emesCloud">
+    <div class="wrapper emes-wrapper" ng-controller="main-controller as ctrl">
+        <header class="main-header">
+            <a href="index2.html" class="logo">
+                <span class="logo-mini">
+                    <b>A</b>LT</span>
+                <span class="logo-lg">
+                    <b>EIMC-</b>MES</span>
+            </a>
+
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <ul class="nav nav-tabs emes-nav-tabs"></ul>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success emes-messages-label-total">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have
+                                    <span class="emes-messages-label-total">4</span> messages</li>
+                                <li>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../src/lib/AdminLTE-2.4.3/dist/img/user2-160x160.jpg" class="img-circle emes-user-image" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                    <small>
+                                                        <i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">See All Messages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 10 notifications</li>
+                                <li>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">9</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 9 tasks</li>
+                                <li>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <h3>
+                                                    Design some buttons
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="../src/lib/AdminLTE-2.4.3/dist/img/user2-160x160.jpg" class="user-image emes-user-image" alt="User Image">
+                                <span class="hidden-xs emes-user-name">Alexander Pierce</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <img src="../src/lib/AdminLTE-2.4.3/dist/img/user2-160x160.jpg" class="img-circle emes-user-image" alt="User Image">
+
+                                    <p>
+                                        <span class="emes-user-name">Alexander Pierce</span> - Web Developer
+                                        <small>Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Followers</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Friends</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat emes-nav-sign-out">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="control-sidebar">
+                                <i class="fa fa-gears"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="../src/lib/AdminLTE-2.4.3/dist/img/user2-160x160.jpg" class="img-circle emes-user-image" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p class="emes-user-name">Alexander Pierce</p>
+                        <a href="#">
+                            <i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!--左侧菜单-->
+                <div class="emes-sidebar-menu"></div>
+            </section>
+        </aside>
+
+        <!--界面展示区-->
+        <div class="content-wrapper">
+            <section class="content container-fluid" id="sys-main-page-tabs"></section>
+        </div>
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0.0
+            </div>
+            <strong>Copyright &copy; 2014-2016
+                <a href="#">EMesCloud</a>.</strong> All rights reserved.
+        </footer>
+
+        <aside class="control-sidebar control-sidebar-dark emes-control-sidebar">
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active">
+                    <a href="#control-sidebar-home-tab" data-toggle="tab">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#control-sidebar-settings-tab" data-toggle="tab">
+                        <i class="fa fa-gears"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading">Recent Activity</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                    <p>Will be 23 on April 24th</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:;">
+                                <h4 class="control-sidebar-subheading">
+                                    Custom Template Design
+                                    <span class="pull-right-container">
+                                        <span class="label label-danger pull-right">70%</span>
+                                    </span>
+                                </h4>
+
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                    <form method="post">
+                        <h3 class="control-sidebar-heading">General Settings</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Report panel usage
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+
+                            <p>
+                                Some information about this general settings option
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!--模态框start-->
+    <div id="sys-main-mode-tabs" class="modal fade in">
+        <div class="modal-content" style="width: 900px; top: 100px;">
+            <div class="modal-header">
+                <button type="button" class="close" title="关闭" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                </button>
+                <span class="sys-win">
+                    <i class="fa fa-desktop"></i>
+                </span>
+                <span class="modal-title">
+                    <!--标题-->
+                    <div class="emes-modal-title">
+                        <label></label>
+                        <span class="emes-button-group">
+                            <a class="emes-modal-save" href="#">
+                                <i class="fa fa-save"></i>
+                                <span>保存</span>
+                            </a>
+                            <a class="userpic emes-modal-uploadphoto" href="#"></a>
+                        </span>
+                    </div>
+                </span>
+            </div>
+            <div class="modal-body emes-modal-body" id="modalContent">
+                <!--内容-->
+            </div>
+        </div>
+    </div>
+    <!--模态框end-->
+    <!--通用模态框,无固定结构-->
+    <div id="emes-main-modal-common" class="modal fade in"></div>
+    <!--上传start-->
+    <div class="modal fade emes-modal-upload">
+        <div class="modal-content" style="width: 1000px; top: 100px;">
+            <div class="modal-header">
+                <button type="button" class="close" title="关闭" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body em-modal-body em-context" style="height:auto;">
+                <div class="emes-file-upload"></div>
+            </div>
+        </div>
+    </div>
+    <!--上传end-->
+    <!--消息框-->
+    <div class="popover fade bottom in em-message-body">
+        <span class="arrow" style="margin-left:42px;"></span>
+        <div class="em-message-context" style="width: 240px;height: 400px;overflow: auto;"></div>
+    </div>
+    <div class="modal fade emes-modal-upload-web" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        上传文件
+                    </h4>
+                </div>
+                <div id="emes-file-uploader-list" class="uploader-list"></div>
+                <div class="emes-file-uploader-btn-group">
+                    <div id="emes-file-uploader-picker">选择文件</div>
+                    <div id="emes-file-uploader-upload">上传</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

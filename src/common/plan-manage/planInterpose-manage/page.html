@@ -1,0 +1,140 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>计划管理</a>
+            </li>
+            <li class="active">计划干预调整</li>
+        </ol>
+    </section>
+
+    <!-- 查询条件 -->
+    <section class="emes-content-search">
+        <div class="box">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#dayDayGenerate">日计划</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#weekPlanConfig">周计划</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="dayDayGenerate">
+                    <!--搜索框-->
+                    <form class="emes-search-form">
+                        <div class="form-inline">
+                            <!--查询条件-->
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeCode'):</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="code"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeProductname')：</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="productName"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeClientname')：</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="clientName"/>
+                            </div>
+                            <div class="input-group" id="planInterposeProductiontime">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeProductiontime')：</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="productionTime" type="text" target="date"/>
+                            </div>
+                        </div>
+                        <div class="search-btn-group">
+                            <button type="button" class="btn btn-default search-query" data-url="跳转url">$t('emes.search')</button>
+                            <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                        </div>
+                    </form>
+
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group emes-btn-order-group">
+                            <button type="button" class="btn btn-default emes-btn-group-import">
+                                <span class="fa fa-upload" aria-hidden="true"></span>
+                                <span>$t('emes.import')</span>
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="fa fa-download" aria-hidden="true"></span>
+                                <span>$t('emes.downloadTemplate')</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--订单表单-->
+                    <div class="emes-page-table emes-page-order-table">
+                        <table id="emes-page-table-dayPlan"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+
+                    <!--工单生成中的工单表单-->
+                    <div class="emes-page-table emes-page-workorder-table" style="display: none;">
+                        <table id="emes-page-table-workorder"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="weekPlanConfig">
+                    <!--搜索框-->
+                    <form class="emes-search-form">
+                        <div class="form-inline">
+                            <!--查询条件-->
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeCode'):</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="code"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeProductname')：</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="productName"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label class="line">$t('emes.planInterposeClientname')：</label>
+                                </div>
+                                <input type="text" class="form-control input-sm" name="clientName"/>
+                            </div>
+                        </div>
+                        <div class="search-btn-group">
+                            <button type="button" class="btn btn-default search-query" data-url="跳转url">$t('emes.search')</button>
+                            <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                        </div>
+                    </form>
+                    <!--订单表单-->
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-upload" aria-hidden="true"></span>
+                                <span>$t('emes.import')</span>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-download" aria-hidden="true"></span>
+                                <span>$t('emes.downloadTemplate')</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="emes-page-table emes-page-table-config-workorder">
+                        <table id="emes-page-table-weekPlan-config"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

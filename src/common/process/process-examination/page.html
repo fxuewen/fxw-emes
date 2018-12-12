@@ -1,0 +1,104 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>工艺管理</a>
+            </li>
+            <li class="active">工艺卡审批</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <label>$t('emes.queryConditions')：</label>
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label>$t('emes.productName')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="productName">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label>$t('emes.processName')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="name">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label>$t('emes.procedureName')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="procedureName">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label>$t('emes.version')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="version">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label>$t('emes.founder')：</label>
+                        </div>
+                        <input class="form-control input-sm" name="diEid">
+                    </div>
+                    <div class="input-group">
+						<div class="input-group-addon">
+							<label>$t('emes.creationTime')：</label>
+						</div>
+						<input class="form-control input-sm" name="diTime" type="text" target="date-range">
+					</div>
+				</div>
+				<div class="search-btn-group">
+					<button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+					<button type="button" class="btn btn-default search-reset" target="searchReset">$t('emes.reset')</button>
+                    <a class="emes-open-fold">
+                        <i class="fa fa-angle-up fa-lg"></i>
+                        <span>$t('emes.hide')</span>
+                    </a>
+                </div>
+			</form>
+		</div>
+	</section>
+
+	<!-- 订单查询 -->
+	<section class="content">
+		<label>$t('emes.search.result')：</label>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="box">
+					<!--表格按钮-->
+					<div class="emes-table-btn">
+						<!--按钮组-->
+						<div class="btn-group emes-btn-order-group">
+							<button type="button" class="btn btn-default emes-btn-group-agree">
+						        <span class="fa fa-plus" aria-hidden="true"></span>
+						        <span>$t('emes.agree')</span>
+							</button>
+							<button type="button" class="btn btn-default emes-btn-group-release">
+						        <span class="fa fa-plus" aria-hidden="true"></span>
+						        <span>$t('emes.release')</span>
+						    </button>
+							<button type="button" class="btn btn-default emes-btn-group-back">
+						        <span class="fa fa-remove" aria-hidden="true"></span>
+						        <span>$t('emes.back')</span>
+						    </button>
+						</div>
+					</div>
+
+					<!--订单表单-->
+					<div class="emes-page-table">
+						<table id="emes-page-table-process-examination"></table>
+						<div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>

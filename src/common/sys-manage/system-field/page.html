@@ -1,0 +1,83 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>系统管理</a>
+            </li>
+            <li class="active">字段配置</li>
+        </ol>>
+    </section>
+    <!--搜索框-->
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.fieldName')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="name" />
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--内容-->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box emes-page-content-tree">
+                    <div class="navbar-nav emes-left-div">
+                        <div>
+                            <ul class="ztree emes-page-tree"></ul>
+                        </div>
+                    </div>
+                    <div class="emes-right-div">
+                        <div class="emes-page-card">
+                            <!--部门详细信息-->
+                            <form class="form-inline em-submit-form">
+                                <div class="emes-card-title">
+                                    <label>$t('emes.fieldInformation')</label>
+                                    <div class="btn-group">
+                                        <a class="btn btn-default btn-group-save" href="#">
+                                            <i class="fa fa-save"></i>
+                                            <span>$t('emes.save')</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="em-context-text card-content" style="overflow: hidden;">
+                                    <div class="thead-body" style="height: 50px; overflow: hidden;">
+                                        <table class="table table-hover text-center em-table table-thead em-sys-field-table">
+                                            <thead>
+                                                <tr>
+                                                    <input type="hidden">
+                                                    <th>$t('emes.fieldName')</th>
+                                                    <th>$t('emes.attributeName')</th>
+                                                    <th>$t('emes.titleName')</th>
+                                                    <th>$t('emes.columnWidth')</th>
+                                                    <th>$t('emes.columnSorting')</th>
+                                                    <th>$t('emes.columnShow')</th>
+                                                    <th>$t('emes.queryType')</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="tbody-body" style="margin-right: 0px; height: calc(100% - 50px); overflow: auto;">
+                                        <table class="table table-hover text-center em-table em-sys-field-table"></table>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

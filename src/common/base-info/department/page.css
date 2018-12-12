@@ -1,0 +1,17 @@
+#baseinfo_department_deptData {
+	text-align: center;
+}
+
+#baseinfo_department_deptData .input-group {
+	width: 80%;
+	margin: 10px 0;
+}
+
+#baseinfo_department_deptData .form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#baseinfo_department_deptData .input-group-addon {
+	width: 100px;
+}

@@ -1,0 +1,101 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "globals": {
+        "Handlebars": true,
+        "WebUploader": true
+    },
+    "rules": {
+        "brace-style": [
+            1,
+            "1tbs"
+        ],
+        "curly": [
+            1,
+            "all"
+        ],
+        "camelcase": 1,
+        "default-case": 1,
+        "dot-notation": [0, {
+            "allowKeywords": false
+        }],
+        "eqeqeq": 0,
+        "id-match": 1,
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            0,
+            "windows"
+        ],
+        "lines-around-comment": 1,
+        "max-depth": [
+            1,
+            4
+        ],
+        "max-len": [
+            1,
+            120,
+            4
+        ],
+        "no-console": "off",
+        "no-use-before-define": 1,
+        "no-underscore-dangle": 1,
+        "no-unused-vars": [
+            1,
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ],
+        "no-trailing-spaces": 1,
+        "no-sparse-arrays": 1,
+        "no-var": 1,
+        "no-empty": 1,
+        "operator-linebreak": [
+            1,
+            "after"
+        ],
+        "object-curly-spacing": [
+            1,
+            "never"
+        ],
+        "one-var": 0,
+        "prefer-const": 1,
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": [
+            1,
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "strict": 1,
+        "spaced-comment": 1,
+        "space-before-function-paren": [
+            0,
+            "always"
+        ],
+        "space-after-keywords": [
+            0,
+            "always"
+        ]
+    }
+}

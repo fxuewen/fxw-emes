@@ -1,0 +1,234 @@
+{
+	"traceId": "0DA7BB08-12F4-4728-AFB0-C452FE897AC4",
+	"code": "200",
+	"data": {
+		"lastPage": 1,
+		"navigatepageNums": [
+			1
+		],
+		"startRow": 1,
+		"hasNextPage": false,
+		"prePage": 0,
+		"nextPage": 0,
+		"colWidth": [
+			150,
+			100,
+			150,
+			150,
+			150,
+			150,
+			150,
+			150,
+			150
+		],
+		"endRow": 15,
+		"pageSize": 30,
+		"colAlias": [
+			"雇员id",
+			"员工名称",
+			"监测码",
+			"员工编码",
+			"员工性别",
+			"部门名称",
+			"职务名称",
+			"班次",
+			"备注"
+		],
+		"list": [
+			{
+				"departmentName": "IT信息部",
+				"jobName": "define.job.tempworker",
+				"number": "1111111111",
+				"code": "11111111111",
+				"sex": 1,
+				"shift": 1,
+				"name": "ssss",
+				"remark": "",
+				"id": 18
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.teacleader",
+				"number": "1111111111",
+				"code": "11111111111",
+				"sex": 1,
+				"shift": 1,
+				"name": "ssss",
+				"remark": "",
+				"id": 17
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.teacleader",
+				"number": "ssssss",
+				"code": "ssssss",
+				"sex": 1,
+				"shift": 1,
+				"name": "ssss",
+				"remark": "",
+				"id": 16
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.teacleader",
+				"number": "ssssss",
+				"code": "ssssss",
+				"sex": 1,
+				"shift": 1,
+				"name": "ssss",
+				"remark": "",
+				"id": 15
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.tempworker",
+				"number": "45243",
+				"code": "34554",
+				"sex": 1,
+				"shift": 1,
+				"name": "drdjdty",
+				"remark": "",
+				"id": 14
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.teacleader",
+				"number": "15545",
+				"code": "1566",
+				"sex": 1,
+				"shift": 1,
+				"name": "sdfds",
+				"remark": "",
+				"id": 13
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.teacleader",
+				"number": "12312",
+				"code": "1212",
+				"sex": 1,
+				"shift": 1,
+				"name": "oph",
+				"remark": "",
+				"id": 11
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.tempworker",
+				"number": "14444",
+				"code": "45525",
+				"sex": 1,
+				"shift": 1,
+				"name": "dfgdf",
+				"remark": "",
+				"id": 10
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.teacleader",
+				"number": "45543",
+				"code": "535",
+				"sex": 1,
+				"shift": 1,
+				"name": "ggf",
+				"remark": "",
+				"id": 9
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.teacleader",
+				"number": "4554",
+				"code": "4452",
+				"sex": 1,
+				"shift": 1,
+				"name": "dfgdf",
+				"remark": "",
+				"id": 8
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.teacleader",
+				"number": "545445",
+				"code": "15346",
+				"sex": 1,
+				"shift": 1,
+				"name": "ghjg",
+				"remark": "",
+				"id": 6
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.teacleader",
+				"number": "124325356",
+				"code": "2555",
+				"sex": 1,
+				"shift": 1,
+				"name": "ffffffff",
+				"remark": "",
+				"id": 5
+			}, {
+				"departmentName": "IT信息部",
+				"jobName": "define.job.teacleader",
+				"number": "C00001",
+				"code": "S000000000000001",
+				"sex": 1,
+				"shift": 1,
+				"name": "hjl",
+				"remark": "",
+				"id": 1
+			}, {
+				"departmentName": "家电产品线",
+				"jobName": "define.job.tempworker",
+				"number": "C00002",
+				"code": "S000000000000002",
+				"sex": 1,
+				"shift": 1,
+				"name": "刘德华",
+				"remark": "",
+				"id": 2
+			}, {
+				"departmentName": "冲压车间",
+				"jobName": "define.job.highworker",
+				"number": "C00003",
+				"code": "S000000000000003",
+				"sex": 1,
+				"shift": 2,
+				"name": "周杰伦",
+				"remark": "",
+				"id": 3
+			}
+		],
+		"colOrder": [
+			"id",
+			"name",
+			"code",
+			"number",
+			"sex",
+			"departmentName",
+			"jobName",
+			"shift",
+			"remark"
+		],
+		"pageNum": 1,
+		"colVisible": [
+			"id",
+			"name",
+			"code",
+			"number",
+			"sex",
+			"departmentName",
+			"jobName",
+			"shift",
+			"remark"
+		],
+		"navigatePages": 8,
+		"total": 15,
+		"pages": 1,
+		"firstPage": 1,
+		"size": 15,
+		"colType": [
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT",
+			"TEXT"
+		],
+		"isLastPage": true,
+		"hasPreviousPage": false,
+		"isFirstPage": true
+	},
+	"success": true
+}

@@ -1,0 +1,37 @@
+{
+	"code":"200",
+	"data":[
+		{
+			"id":1,
+			"name":"综合管理部",
+			"parentId":0
+		},
+		{
+			"id":2,
+			"name":"IT信息部",
+			"parentId":1
+		},
+		{
+			"id":3,
+			"name":"家电产品线",
+			"parentId":1
+		},
+		{
+			"id":4,
+			"name":"冲压车间",
+			"parentId":3
+		},
+		{
+			"id":5,
+			"name":"组装车间",
+			"parentId":3
+		},
+		{
+			"id":6,
+			"name":"仓储管理部",
+			"parentId":1
+		}
+	],
+	"success":true,
+	"traceId":"043E2CFF-E113-4B05-BD0F-CE32D05455D8"
+}

@@ -1,0 +1,112 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>基础信息</a>
+            </li>
+            <li class="active">供应商管理</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.supplierNumber')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="code"  />
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.supplierName')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="name"  />
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.SupplierFullName')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="fullName"  />
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.contactAddress')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="address" />
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                    <a class="emes-open-fold">
+                        <i class="fa fa-angle-up fa-lg"></i>
+                        <span>$t('emes.hide')</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group">
+                            <button id="btn_add" type="button" class="btn btn-default btn-group-add">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                                <span>$t('emes.add')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-modify">
+                                <span class="fa fa-edit" aria-hidden="true"></span>
+                                <span>$t('emes.modify')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-delete">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>$t('emes.delete')</span>
+                            </button>
+                            <div class="dropdown" style="display:inline-block">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="true">
+                                    <span class="fa fa-list"></span>
+                                    <span>$t('emes.more')</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-file-excel-o"></i>
+                                            <span>$t('emes.export')</span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-cog"></i>
+                                            <span>$t('emes.fieldConfig')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-info-circle"></i>
+                                            <span>$t('emes.helpPage')</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--表单-->
+                    <div class="emes-page-table">
+                        <table id="emes-page-table-supplier"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,113 @@
+<div class="emes-modal-content">
+    <form id="supplierForm">
+        <input type="hidden" name="id" value="{{id}}" />
+        <div class="emes-modal-card">
+            <div class="card-title">
+                <label>基础信息</label>
+                <div class="btn-group"></div>
+            </div>
+            <div class="card-content form-inline">
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.supplierName')：</label>
+                    </div>
+                    <input class="form-control" name="name" type="text"  validator="isRequire" value="{{name}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.supplierNumber')：</label>
+                    </div>
+                    <input class="form-control" name="code" type="text"  validator="isRequire" value="{{code}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.SupplierFullName')：</label>
+                    </div>
+                    <input class="form-control" name="fullName" type="text"  validator="isRequire" value="{{fullName}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.mainBusiness')：</label>
+                    </div>
+                    <input class="form-control" name="mainBusiness" type="text"  validator="isRequire" value="{{mainBusiness}}" />
+                </div>
+            </div>
+        </div>
+        <div class="emes-modal-card">
+            <div class="card-title">
+                <label>$t('emes.detailInformation')</label>
+                <div class="btn-group"></div>
+            </div>
+            <div class="card-content form-inline">
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contact')：</label>
+                    </div>
+                    <input class="form-control" name="contacts" type="text" validator="isRequire"  value="{{contacts}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contactPhoneNumber')：</label>
+                    </div>
+                    <input class="form-control" name="phone" type="text" placeholder="$t('emes.phoneNumber')" validator="isInteger"  value="{{phone}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.contactAddress')：</label>
+                    </div>
+                    <input class="form-control" name="address" type="text" validator="isRequire"  value="{{address}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.rate')：</label>
+                    </div>
+                    <input class="form-control" name="taxRate" type="text" validator="isInteger"  value="{{taxRate}}" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.invoices')：</label>
+                    </div>
+                    <select class="form-control" name="invoiceType" style="width: 155px">
+                        {{#selInvoiceType invoiceType}} {{/selInvoiceType}}
+                    </select>
+                    <span class="form-control-feedback" style="padding-top: 8px;">
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.credibility')：</label>
+                    </div>
+                    <select class="form-control" name="credit" style="width: 155px">
+                        {{#selCredit credit}} {{/selCredit}}
+                    </select>
+                    <span class="form-control-feedback" style="padding-top: 8px;">
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <span class="emes-form-required">*</span>$t('emes.available')：</label>
+                    </div>
+                    <select class="form-control" name="usable" style="width: 155px">
+                        {{#selUsable usable}} {{/selUsable}}
+                    </select>
+                    <span class="form-control-feedback" style="padding-top: 8px;">
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

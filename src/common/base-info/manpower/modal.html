@@ -1,0 +1,149 @@
+<div class="emes-modal-content emes-modal-manpower">
+    <div class="emes-horizontal-layout">
+        <div class="em-left-div" style="width:200px;">
+            <div>
+                <div>
+                    <img class="fancybox-image" style="height: 160px; width: 160px;" src="{{picPath}}"/>
+                </div>
+                <fieldset>
+                    <legend>
+                        <label>$t('emes.employeeBaseInfomation')</label>
+                    </legend>
+                    <div class="input-group em-auto-input"
+                         style="width: calc(100% - 10px);margin-top: 5px;margin-left: -3px;">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.employeeNumber')</label>
+                        </div>
+                        <input class="form-control" name="number" type="text" disabled="disabled" style="width: 95px;"
+                               value="{{number}}"/>
+                    </div>
+                    <div class="input-group em-auto-input" style="width: calc(100% - 10px);margin-left: -3px;">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.staffName')</label>
+                        </div>
+                        <input class="form-control" name="name" type="text" disabled="disabled" style="width: 95px;"
+                               value="{{name}}"/>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="context em-right-div fullh">
+            <form class="form-inline em-submit-form" id="modalForm">
+                <input name="id" type="hidden" value="{{id}}"/>
+                <input type="hidden" name="picUuid" class="emes-pic-uuid" value="{{picUuid}}"/>
+                <div class="contexts">
+                    <div class="emes-card">
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">
+                                    <span class="emes-form-required">*</span>$t('emes.employeeNumber')：</label>
+                            </div>
+                            <input class="form-control" name="number" type="text" validator="isRequire"
+                                   value="{{number}}"/>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">
+                                    <span class="emes-form-required">*</span>$t('emes.staffName')：</label>
+                            </div>
+                            <input class="form-control" name="name" type="text" validator="isRequire" value="{{name}}"/>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">
+                                    <span class="emes-form-required">*</span>$t('emes.monitorCode')：</label>
+                            </div>
+                            <input class="form-control" name="code" type="text" validator="isRequire" value="{{code}}"/>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line"><span class="emes-form-required">*</span>$t('emes.employeesGender')：</label>
+                            </div>
+                            <select class="form-control" name="sex" style="width: 155px">
+                                {{#selSex sex}} {{/selSex}}
+                            </select>
+                            <span class="form-control-feedback">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">
+                                    <span class="emes-form-required">*</span>$t('emes.subordinateDepartments')：</label>
+                            </div>
+                            <!--<input class="form-control emes-form-control" select-name="departmentId">-->
+
+                                <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="departmentId" name="departmentId" >
+                                </select>
+                                <input type="hidden" name="departmentId" value="{{departmentId}}">
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">$t('emes.position')：</label>
+                            </div>
+                            <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="jobId" name="jobId" >
+                            </select>
+                            <!--<input class="form-control emes-form-control" select-name="jobId">-->
+                            <input type="hidden" name="jobId" value="{{jobId}}">
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">
+                                    <span class="emes-form-required">*</span>$t('emes.factoryName')：</label>
+                            </div>
+                            <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="factoryId" name="factoryId" >
+                            </select>
+                            <input type="hidden" name="factoryId" value="{{factoryId}}">
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">$t('emes.email')：</label>
+                            </div>
+                            <input class="form-control" type="text" name="email" placeholder="eman@163.com"
+                                   value="{{email}}"/>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">$t('emes.shift')：</label>
+                            </div>
+                            <select class="form-control" name="shift" style="width: 155px">
+                                {{#selShift shift}} {{/selShift}}
+                            </select>
+                            <span class="form-control-feedback">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="input-group emes-auto-input">
+                            <div class="input-group-addon">
+                                <label class="line">$t('emes.remark')：</label>
+                            </div>
+                            <textarea class="form-control" rows="3" style="width: 430px;"
+                                      name="remark">{{remark}}</textarea>
+                        </div>
+                        <!--创建角色-->
+                        <div class="em-user-set" style="display: none;">
+                            <div class="input-group emes-auto-input">
+                                <div class="input-group-addon">
+                                    <label class="line">
+                                        <span class="emes-form-required">*</span>支持多处登录：
+                                    </label>
+                                </div>
+                                <label><input name="moreLogin" type="radio" value="1" checked="checked" />是</label>&nbsp&nbsp
+                                <label><input name="moreLogin" type="radio" value="0" />否</label>
+                                <span class="form-control-feedback">
+                                    <i class="fa fa-leanpub"></i>
+                                </span>
+                            </div>
+                            <div class="input-group em-auto-input">
+                                <div class="input-group-addon">
+                                    <label class="line"><span class="emes-form-required">*</span>用户名</label>
+                                </div>
+                                <input type="text" class="form-control" name="userName" validator="isRequire" value="{{userName}}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

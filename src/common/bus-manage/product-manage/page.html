@@ -1,0 +1,87 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>业务管理</a>
+            </li>
+            <li class="active">产品管理</li>
+        </ol>>
+    </section>
+    <!--搜索框-->
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.productName'):</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="productName" type="text" />
+                        <!-- <select class="selectpicker form-control" name="productName" data-live-search="true" data-live-search-placeholder="$t('emes.search')..."> -->
+                        </select>
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.clientName'):</label>
+                        </div>
+                        <input class="form-control input-sm" name="clientName">
+                        <!-- <select class="selectpicker form-control" name="clientName" data-live-search="true" data-live-search-placeholder="$t('emes.search')..."> -->
+                        </select>
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.productArea'):</label>
+                        </div>
+                        <input class="form-control input-sm" name="areaName">
+                        <!-- <select class="selectpicker form-control" name="areaName" data-live-search="true" data-live-search-placeholder="$t('emes.search')..."> -->
+                        </select>
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset">$t('emes.reset')</button>
+                    <a class="emes-open-fold">
+                        <i class="fa fa-angle-up fa-lg"></i>
+                        <span>$t('emes.hide')</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--内容-->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box emes-page-content-tree">
+                    <div class="navbar-nav emes-left-div">
+                        <div>
+                            <ul class="ztree emes-page-tree"></ul>
+                        </div>
+                    </div>
+                    <div class="emes-right-div">
+                        <!--按钮-->
+                        <div class="emes-table-btn">
+                            <div class="btn-group emes-btn-order-group">
+                                <button type="button" class="btn btn-default btn-group-add">
+                                    <span class="fa fa-plus" aria-hidden="true"></span>
+                                    <span>$t('emes.add')</span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-group-modify">
+                                    <span class="fa fa-edit" aria-hidden="true"></span>
+                                    <span>$t('emes.modify')</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="emes-page-table">
+                            <table id="emes-page-table-product-manage"></table>
+                            <div class="emes-table-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

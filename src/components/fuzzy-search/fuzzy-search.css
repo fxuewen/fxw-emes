@@ -1,0 +1,16 @@
+.emes-ul-auto-list.dropdown-menu {
+    left: auto;
+}
+
+.emes-ul-auto-list li {
+    cursor: pointer;
+    padding-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.emes-ul-auto-list.show {
+    display: block;
+    z-index: 9999;
+}

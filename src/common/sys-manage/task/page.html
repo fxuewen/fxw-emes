@@ -1,0 +1,67 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>系统配置</a>
+            </li>
+            <li class="active">计划任务</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <input type="hidden" name="page" value="1">
+                    <input type="hidden" name="pagesize" value="10">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.taskCode')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="code" />
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query" data-url="跳转url">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <div class="btn-group">
+                            <button id="btn_add" type="button" class="btn btn-default btn-group-stop">
+                                <span class="fa fa-stop" aria-hidden="true"></span>
+                                <span>$t('emes.suspended')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-resume">
+                                <span class="fa fa-play" aria-hidden="true"></span>
+                                <span>$t('emes.restore')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-discard">
+                                <span class="fa fa-bitbucket" aria-hidden="true"></span>
+                                <span>$t('emes.abandoned')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-modify">
+                                <span class="fa fa-retweet" aria-hidden="true"></span>
+                                <span>$t('emes.modify')</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--表单-->
+                    <div class="emes-page-table">
+                        <table id="emes-page-table-task"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

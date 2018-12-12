@@ -1,0 +1,55 @@
+<div class="emes-modal-content modify-order">
+    <form class="form-horizontal form-modify-order emes-modal-content-form">
+        <input type="hidden" name="id" value="{{id}}">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.productName')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" readonly="readonly" name="productName" value="{{productName}}">
+                <input type="hidden" name="productId" value="{{productId}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.clientName')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" readonly="readonly" name="clientName" value="{{clientName}}">
+                <input type="hidden" name="clientId" value="{{clientId}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.code')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.code')" name="mainCode" value="{{mainCode}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.quantity')
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.quantity')" name="quantity" validator="isInteger" value="{{quantity}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.deliveryQuantity')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="$t('emes.deliveryQuantity')" readonly="readonly" name="deliveryQuantity"
+                    value="{{deliveryQuantity}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.deliveryDate')</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="$t('emes.deliveryDate')" target="date" name="deliveryDate" validator="isRequire" value="{{deliveryDate}}" readonly="readonly">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.followerName')</label>
+            <div class="col-sm-8">
+                <input class="form-control emes-form-control" select-name="followerId">
+                <!-- <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="orderEmployee" name="followerId" value="{{followerId}}">
+                </select> -->
+                <input type="hidden" name="followerName">
+            </div>
+        </div>
+    </form>
+</div>

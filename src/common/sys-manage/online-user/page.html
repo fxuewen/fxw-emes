@@ -1,0 +1,53 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>系统配置</a>
+            </li>
+            <li class="active">在线用户</li>
+        </ol>
+    </section>
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.userName')：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="name" />
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query" data-url="跳转url">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <div class="btn-group">
+                            <button id="btn_add" type="button" class="btn btn-default btn-group-offline">
+                                <span class="fa fa-user-times" aria-hidden="true"></span>
+                                <span>$t('emes.offline')</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--表单-->
+                    <div class="emes-page-table">
+                        <table id="emes-page-table-online-user"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

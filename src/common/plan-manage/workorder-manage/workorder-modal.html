@@ -1,0 +1,77 @@
+<div class="emes-modal-content">
+    <form class="form-horizontal emes-workorder-config-form">
+        <input type="hidden" name="id" value="{{id}}">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.workordercode'):</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="code" value="{{code}}" readonly="readonly">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.productName'):</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="productName" value="{{productName}}" readonly="readonly">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.orderType'):</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" item="type" readonly="readonly">
+                <input type="hidden" name="type" value="{{type}}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <a class="emes-form-required">*</a>$t('emes.workOrderQuantity'):
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="quantity" validator="isInteger" value="{{quantity}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <a class="emes-form-required">*</a>$t('emes.planProductionTime'):
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" validator="isRequire" name="startTime" target="date" readonly="readonly">
+                <i class="fa fa-calendar"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <a class="emes-form-required">*</a>$t('emes.plannedEndTime'):
+            </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control dropup" validator="isRequire" name="endTime" target="date" readonly="readonly">
+                <i class="fa fa-calendar"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <a class="emes-form-required">*</a>$t('emes.processName'):
+            </label>
+            <div class="col-sm-8">
+                <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="processName" name="processName" value="{{processName}}">
+                </select>
+                <input type="hidden" name="processId" value="{{processId}}">
+                <input type="hidden" name="inProcedure" value="{{inProcedure}}">
+                <input type="hidden" name="outProcedure" value="{{outProcedure}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.depot'):</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="depotId" value="{{depotId}}" readonly="readonly">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">$t('emes.bindWorkOrder'):</label>
+            <div class="col-sm-8">
+                <select class="selectpicker" multiple item="groupId">
+                </select>
+                <input type="hidden" name="addId"/>
+                <input type="hidden" name="removeId"/>
+            </div>
+        </div>
+    </form>
+</div>

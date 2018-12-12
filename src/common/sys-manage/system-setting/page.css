@@ -1,0 +1,12 @@
+
+.emes-global-list{
+	list-style-type: none;
+}
+.emes-global-list li:hover{
+	background-color: #c4e3f3;
+}
+.emes-global-list li a{
+	font-family: '微软雅黑', Courier, monospace;
+	color: #777;
+}
+

@@ -1,0 +1,21 @@
+<ul class="sidebar-menu" data-widget="tree">
+    <li class="header">HEADER</li>
+    {{#each this}}
+    <li class="treeview">
+        <a href="#">
+            <i class="fa fa-link"></i>
+            <span>{{key}}</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+            {{#each value}}
+            <li>
+                <a href="#" id="emes-page-{{id}}" data-url="{{url}}" parent-text="{{../key}}" text="{{nameI18n}}">{{nameI18n}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,105 @@
+<div class="emes-page">
+    <section class="content-header">
+        <ol class="breadcrumb emes-page-header-ol">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>工艺</a>
+            </li>
+            <li class="active">工艺卡管理</li>
+        </ol>
+    </section>
+    <!--搜索框-->
+    <section class="emes-content-search">
+        <div class="box">
+            <!--搜索框-->
+            <form class="emes-search-form">
+                <div class="form-inline">
+                    <!--查询条件-->
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.productName'):</label>
+                        </div>
+                        <input class="form-control input-sm" name="productName">
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">$t('emes.procedureName'):</label>
+                        </div>
+                        <input class="form-control input-sm" name="procedureName">
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">工艺卡名称:</label>
+                        </div>
+                        <input class="form-control input-sm" name="name">
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">发布时间：</label>
+                        </div>
+                        <input type="text" class="form-control input-sm" name="releaseTime" target="date-range"/>
+                    </div>
+                    <div class="input-group em-auto-input">
+                        <div class="input-group-addon">
+                            <label class="line">删除标识:</label>
+                        </div>
+                        <select class="form-control input-sm" name="dDel">
+                            <option value=" ">请选择</option>
+                            <option value="0">N</option>
+                            <option value="1">Y</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-btn-group">
+                    <button type="button" class="btn btn-default search-query">$t('emes.search')</button>
+                    <button type="button" class="btn btn-default  search-reset" target="searchReset">$t('emes.reset')
+                    </button>
+                    <a class="emes-open-fold">
+                        <i class="fa fa-angle-up fa-lg"></i>
+                        <span>$t('emes.hide')</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--内容-->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--表格按钮-->
+                    <div class="emes-table-btn">
+                        <!--按钮组-->
+                        <div class="btn-group">
+                            <button id="btn_add" type="button" class="btn btn-default btn-group-add">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                                <span>添加</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-modify">
+                                <span class="fa fa-edit" aria-hidden="true"></span>
+                                <span>$t('emes.modify')</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-delete">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>删除</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-submit">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>提交</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-group-release">
+                                <span class="fa fa-remove" aria-hidden="true"></span>
+                                <span>发布</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--表单-->
+                    <div class="emes-page-table">
+                        <table id="emes-page-table-processCard"></table>
+                        <div class="emes-table-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

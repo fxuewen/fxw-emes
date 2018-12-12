@@ -1,0 +1,46 @@
+<div class="emes-modal-content emes-from-delivery">
+	<form class="form-horizontal">
+		<input type="hidden" name="id" value="{{id}}">
+		<input type="hidden" name="orderId" value="{{orderId}}">
+		<div class="form-group">
+			<label class="col-sm-3 control-label">$t('emes.code')</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control emes-form-control" readonly="readonly" name="code" value="{{code}}">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">$t('emes.productName')</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control emes-form-control" readonly="readonly" name="productName" value="{{productName}}">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">$t('emes.quantity')</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control emes-form-control" readonly="readonly" name="orderQuantity" value="{{orderQuantity}}">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">$t('emes.deliveryDate')</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control emes-form-control" readonly="readonly" name="deliveryDate" value="{{deliveryDate}}" readonly="readonly">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.deliveryQuantity')
+            </label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control emes-form-control" placeholder="$t('emes.deliveryQuantity')" name="quantity" validator="isInteger" value="{{quantity}}">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.date')
+            </label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" placeholder="$t('emes.date')" target="date" name="date" validator="isRequire" readonly="readonly" value="{{date}}">
+			</div>
+		</div>
+	</form>
+</div>

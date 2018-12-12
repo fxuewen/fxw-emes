@@ -1,0 +1,69 @@
+<div class="emes-modal-content">
+    {{#with this}}
+    <form>
+        <div class="emes-modal-card">
+            <div class="card-title">
+                <label>$t('emes.basicInformation')</label>
+                <div class="btn-group"></div>
+            </div>
+            <div class="card-content form-inline">
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.taskName')</label>
+                    </div>
+                    <input class="form-control" name="name" value="{{name}}" readonly data-url="未设置" type="text" />
+                </div>
+
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.taskCode')</label>
+                    </div>
+                    <input class="form-control" name="code" value="{{code}}" readonly data-url="未设置" type="text" />
+                </div>
+
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.executionTime')</label>
+                    </div>
+                    <input type="text" class="form-control emes-task-modal-btn-cron" name="cron" data-url="未设置" id="cron" value="{{cron}}" />
+                </div>
+
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.messageQueueId')</label>
+                    </div>
+                    <input class="form-control" name="topic" value="{{topic}}" readonly data-url="未设置" type="text" />
+                </div>
+
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.serviceName')</label>
+                    </div>
+                    <input class="form-control" name="service" value="{{service}}" readonly data-url="未设置" type="text" />
+                </div>
+
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>$t('emes.state')</label>
+                    </div>
+                    <input class="form-control" name="status" value="{{#manageControl status}}
+                            {{/manageControl}}" readonly data-url="未设置" type="text" />
+                </div>
+                <div class="input-group em-auto-input">
+                    <div class="input-group-addon">
+                        <label class="line">
+                            <a>*</a>创建用户</label>
+                    </div>
+                    <input class="form-control" name="userCreate" value="{{userCreate}}" readonly data-url="未设置" type="text" />
+                </div>
+            </div>
+        </div>
+    </form>
+    {{/with}}
+</div>

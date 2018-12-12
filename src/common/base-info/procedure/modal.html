@@ -1,0 +1,43 @@
+<div class="emes-modal-content">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>工序名称</label>
+            <input name="id" type="hidden" value="{{id}}"/>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" validator="isRequire" placeholder="工序名称"
+                       name="name" value="{{name}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>工序编码</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" validator="isRequire" placeholder="工序编码"
+                       name="code" value="{{code}}">
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>工序类型</label>
+            <div class="col-sm-8">
+                <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." item="type" name="type" value="{{type}}">
+                </select>
+                <input type="hidden" name="typeId"/> 
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>生产资源id</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" validator="isInteger" placeholder="生产资源id"
+                       name="resourceId" value="{{resourceId}}">
+               
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">备注</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="备注" name="remark"
+                       value="{{remark}}">
+            </div>
+        </div>
+    </form>
+</div>

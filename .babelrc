@@ -1,0 +1,16 @@
+{
+    "presets": [
+        "es2015"
+    ],
+    "ignore": [
+        "./src/lib/particleground.min.js"
+    ],
+    "plugins": [
+        ["transform-runtime", {
+            "helpers": false,
+            "polyfill": true,
+            "regenerator": true,
+            "moduleName": "babel-runtime"
+        }]
+    ]
+}

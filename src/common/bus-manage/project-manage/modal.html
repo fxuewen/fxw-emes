@@ -1,0 +1,78 @@
+<div class="emes-modal-content">
+    <div class="emes-modal-content-project">
+        <form class="form-horizontal emes-modal-content-form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">$t('emes.projectType')：</label>
+                <div class="col-sm-4">
+                    <select class="selectpicker emes-orderReference">
+                        <optgroup item="projectTypes"></optgroup>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <form class="form-horizontal emes-modal-content-form hidden">
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><span class="emes-form-required">*</span>$t('emes.code')：</label>
+            <div class="col-sm-4">
+                <input class="form-control input-sm" select-name="orderId" validator="isRequire" value="{{code}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">$t('emes.quantity')：</label>
+            <div class="col-sm-4">
+                <input class="form-control" item="quantity" readonly="true">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">$t('emes.productName')：</label>
+            <div class="col-sm-4">
+                <input class="form-control" item="productName" readonly="true" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">$t('emes.clientName'):</label>
+            <div class="col-sm-4">
+                <input class="form-control" item="clientName" readonly="true" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">$t('emes.deliveryDate')：</label>
+            <div class="col-sm-4">
+                <input class="form-control" item="deliveryDate" readonly="true" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><span class="emes-form-required">*</span>$t('emes.projectCode')：</label>
+            <div class="col-sm-4">
+                <input class="form-control" name="code" validator="isRequire">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><span class="emes-form-required">*</span>$t('emes.projectName')：</label>
+            <div class="col-sm-4">
+                <input class="form-control" name="name" validator="isRequire"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><span class="emes-form-required">*</span>$t('emes.planProductDate')：</label>
+            <div class="col-sm-4">
+                <input class="form-control dropup" item="planDates" target="date" validator="isRequire"/>
+            </div>
+        </div>
+        <div class="form-group hidden">
+            <label class="col-sm-2 control-label">$t('emes.projectType')：</label>
+            <div class="col-sm-4">
+                <select class="selectpicker" name="type">
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><span class="emes-form-required">*</span>$t('emes.projectDirectorName')：</label>
+            <div class="col-sm-4">
+                <input class="form-control input-sm" select-name="directorId" validator="isRequire" value="{{projectDirectorName}}">
+            </div>
+        </div>
+    </form>
+</div>

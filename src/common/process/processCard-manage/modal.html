@@ -1,0 +1,103 @@
+<div class="emes-table-btn">
+    <div class="btn-group emes-btn-order-group">
+        <button type="button" class="btn btn-default-upload" id="btn-default-upload">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+            <span>上传文件</span>
+        </button>
+    </div>
+</div>
+<div class="emes-modal-content">
+    <form class="form-horizontal emes-modal-content-form">
+        <input type="hidden" value="{{state}}" name="state">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.productName'):</label>
+            <div class="col-sm-8">
+                <input class="form-control input-sm" select-name="productId" validator="isRequire"  >
+                <input class="form-control input-sm" type="hidden" name="productName" value="{{productName}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>工艺卡名称:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="工艺卡名称" name="name"
+                       validator="isRequire"  value="{{name}}" >
+                <input name="id" type="hidden" value="{{id}}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>$t('emes.procedureName'):</label>
+            <div class="col-sm-8">
+                <input class="form-control input-sm" select-name="procedureId" validator="isRequire" >
+                <input class="form-control input-sm" type="hidden" name="procedureName" value="{{procedureName}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>版本号:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="版本号" name="version"
+                       validator="isRequire" value="{{version}}" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>审批人:</label>
+            <div class="col-sm-8">
+                <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." multiple
+                        name="employeeId">
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>有效期:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control dateTime" placeholder="有效期" name="effectiveDay"
+                       validator="isRequire"    value="{{effectiveDay}}" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>生效时间:</label>
+            <div class="col-sm-8">
+                <input class="form-control emes-form-control dropup dateTime" placeholder="生效时间" name="effectTime" target="date"
+                       validator="isRequire"  item='effectTime'   value="{{effectTime}}" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label"><span class="emes-form-required">*</span>失效时间:</label>
+            <div class="col-sm-8">
+                <input class="form-control emes-form-control dropup" placeholder="失效时间" name="failureTime"
+                       target='date'  readonly="true" item='failureTime'  value="{{failureTime}}"  />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                <span class="emes-form-required">*</span>文件类型:</label>
+            <div class="col-sm-8">
+                <select class="selectpicker" data-live-search-placeholder="$t('emes.search')..." name="fileType">
+                </select>
+            </div>
+        </div>
+        <div class="form-group" style="display: none">
+            <label class="col-sm-3 control-label">文件名称:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="文件名称" readonly="readonly"
+                       name="fileName"  value="{{fileName}}" >
+            </div>
+        </div>
+        <div class="form-group" style="display: none">
+            <label class="col-sm-3 control-label">文件路径:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="文件路径" readonly="readonly"
+                       name="filePath"  value="{{filePath}}" >
+            </div>
+        </div>
+        <div class="form-group" style="display: none">
+            <label class="col-sm-3 control-label">文件Uuid:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control emes-form-control" placeholder="文件Uuid" readonly="readonly"
+                       name="fileUuid"  value="{{fileUuid}}" >
+            </div>
+        </div>
+    </form>
+</div>

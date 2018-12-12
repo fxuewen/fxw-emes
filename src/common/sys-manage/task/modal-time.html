@@ -1,0 +1,69 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body ems-modal-cron-content"></div>
+            <div style="margin-left: 14px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label> 0 0 10,14,16 * * ? 每天上午10点，下午2点，4点</label>
+                            </td>
+                            <td>
+                                <label>0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>0 0 12 ? * WED 表示每个星期三中午12点</label>
+                            </td>
+                            <td>
+                                <label>"0 0 12 * * ?" 每天中午12点触发</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>"0 15 10 * * ? *" 每天上午10:15触发</label>
+                            </td>
+                            <td>
+                                <label>"0 15 10 * * ? 2005" 2005年的每天上午10:15触发</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>"0 * 14 * * ?" 在每天下午2点到下午2:59期间的每1分钟触发</label>
+                            </td>
+                            <td>
+                                <label>"0 0/5 14,18 * * ?" 在每天下午2点到2:55期间和下午6点到6:55期间的每5分钟触发</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label> "0 0-5 14 * * ?" 在每天下午2点到下午2:05期间的每1分钟触发</label>
+                            </td>
+                            <td>
+                                <label> "0 10,44 14 ? 3 WED" 每年三月的星期三的下午2:10和2:44触发</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label> "0 15 10 15 * ?" 每月15日上午10:15触发</label>
+                            </td>
+                            <td>
+                                <label> "0 15 10 L * ?" 每月最后一日的上午10:15触发</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-default" data-dismiss="modal">$t('emes.shutDown')</button>
+                <button type="button" class="btn btn-primary modal-suggest-submit">$t('emes.submit')</button>
+            </div>
+        </div>
+    </div>
+</div>

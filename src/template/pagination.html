@@ -1,0 +1,40 @@
+{{#with this}}
+<div class="emes-pagination-recode">
+    <b>显示</b>
+    <span>{{startRow}}</span>
+    <b>到</b>
+    <span>{{endRow}}</span>
+    <b>项, 共</b>
+    <span>{{total}}</span>
+    <b>项, 每页</b>
+    <span>{{pageSize}}</span>
+    <b>项</b>
+</div>
+<ul class="pagination" page-size="{{pageSize}}">
+    {{#if hasPreviousPage}}
+    <li class="emes-pagination-pre" current-page="{{pageNum}}">
+        <a href="#">&laquo;</a>
+    </li>
+    {{else}}
+    <li class="emes-pagination-pre disabled" current-page="{{pageNum}}">
+        <a href="#">&laquo;</a>
+    </li>
+    {{/if}} {{#each pageArr}} {{#if isCurrent}}
+    <li class="emes-pagination-page active" current-page="{{num}}">
+        <a href="#">{{num}}</a>
+    </li>
+    {{else}}
+    <li class="emes-pagination-page" current-page="{{num}}">
+        <a href="#">{{num}}</a>
+    </li>
+    {{/if}} {{/each}} {{#if hasNextPage}}
+    <li class="emes-pagination-next" current-page="{{pageNum}}">
+        <a href="#">&raquo;</a>
+    </li>
+    {{else}}
+    <li class="emes-pagination-next disabled" current-page="{{pageNum}}">
+        <a href="#">&raquo;</a>
+    </li>
+    {{/if}}
+</ul>
+{{/with}}
